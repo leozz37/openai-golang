@@ -1,3 +1,3 @@
-module github.com/leozz37/openai-golang
+module github.com/leozz37/openai
 
 go 1.19
