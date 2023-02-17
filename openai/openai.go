@@ -22,7 +22,7 @@ type Response struct {
 }
 
 func Create(prompt, model string, max_tokens int32, temperature float32) (string, error) {
-	instance_url := os.Getenv("INSTANCE_URL")
+	instance_url := os.Getenv("OPENAI_INSTANCE_URL")
 	bearer := "Bearer " + os.Getenv("OPENAI_API_KEY")
 
 	body := request{
